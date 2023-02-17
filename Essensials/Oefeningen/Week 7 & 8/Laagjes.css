@@ -1,0 +1,41 @@
+.green {
+    background-color: green;
+    box-shadow: black 10px 10px 10px;
+    height: 24vh;
+    width: 24vh;
+    border-radius: 25px;
+
+    position: absolute;
+}
+
+div:nth-child(1){
+    opacity: 70%;
+    left: 50px;
+    top: 50px;
+}
+
+div:nth-child(2) {
+    opacity: 60%;
+    left: 100px;
+    top: 100px;
+}
+
+div:nth-child(2) {
+    opacity: 50%;
+    left: 100px;
+    top: 100px;
+}
+
+
+div:nth-child(4) {
+    opacity: 35%;
+    left: 150px;
+    top: 150px;
+}
+
+
+div:nth-child(5) {
+    opacity: 10%;
+    left: 150px;
+    top: 150px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Examenopdracht 3</title>
+    <link rel="stylesheet" href="exopdr3.css">
+    <!-- Naam student:  -->
+
+</head>
+<body>
+<form method="post" action="mailto:info@examenpro.be">
+    <div class="left">
+        <label for="naam">Naam*</label>
+        <label for="emailadres">E-mailadres*</label>
+        <label>Onderwerp</label>
+        <label for="type">Type PS</label>
+        <label for="formulier" >Formulering klacht</label>
+
+        <textarea id="formulier" rows="4" cols="120" wrap="hard">
+
+        </textarea>
+
+        <div class="knoppen">
+            <input type="submit" value="Gegevens verzenden">
+            <input type="reset" value="Gegevens wissen">
+        </div>
+    </div>
+
+
+
+    <div class="right">
+        <input id="naam" type="text" required name="naam">
+        <input id="emailadres" type="text" required name="emailadres">
+
+        <div class="radiobuttons">
+            <div>
+                <input id="console" type="radio" value="Console" name="Console">
+                <label for="console">Console</label>
+            </div>
+
+            <div>
+                <input id="controller" type="radio" value="Controller" name="controller">
+                <label for="controller">Controller</label>
+            </div>
+
+            <div>
+                <input id="overige" type="radio" value="overige" name="overige">
+                <label for="overige">Overige</label>
+            </div>
+        </div>
+
+        <input id="type" type="text" required name="type">
+
+    </div>
+
+</form>
+</body>
+</html>

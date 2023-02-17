@@ -1,0 +1,45 @@
+body {
+    font-family: "Roboto Thin", "Roboto Light", "Arial Narrow";
+    background-color: #4c5868;
+    color: white;
+}
+h1 {
+    color: #f5c789;
+}
+
+a {
+    color: white;
+}
+a:hover {
+    color: #f5c789;
+    font-size: larger;
+}
+
+dl li {
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+    display: inline;
+}
+
+ol li:hover {
+    color: #f5c789;
+    font-size: larger;
+    text-decoration: underline;
+}
+
+ol li {
+    text-decoration: underline;
+}
+
+dl li:hover {
+    background-color: #71695f;
+    color: #f5c789;
+}
+
+
+

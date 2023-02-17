@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1 {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+img {
+    width: 30vw;
+    height: 30vw;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+iframe {
+    position: absolute;
+    top: 20px;
+    left: 45px;
+    height: 360px;
+    width: 210px;
+    z-index: 5;
+}
+
+.phone {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+}

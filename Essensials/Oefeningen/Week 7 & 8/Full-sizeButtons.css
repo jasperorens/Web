@@ -1,0 +1,26 @@
+
+
+.green {
+    background-color: green;
+    width: 20vw;
+    height: 20vw;
+    margin: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+}

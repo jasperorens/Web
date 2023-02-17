@@ -1,0 +1,4 @@
+open de terminal en klik 'npm i sudoku'
+en als je een moet ophalen typ je 'npm i' en hij haalt de depencies mee die in de 
+'package.json' staat. hier staat dan in welke packages hij moet 
+binnenhalen

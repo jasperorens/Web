@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza</title>
+    <link rel="stylesheet" href="pizza.css">
+</head>
+<body>
+<header>
+    <div>Pizzacorner Hasselt</div>
+</header>
+
+<div class="theBody">
+    <p class="bold">Stel uw eigen pizza samen!</p>
+    <form action="mailto:someone@someone.com" method="post" name="pizza">
+        <label for="naam">Voornaam en naam:</label> </br>
+        <input type="text" placeholder="Kimberly Willems" id="naam" required> </br>
+
+        </br>
+
+        <div class="radiobuttons">
+            <label class="bold">Type korst:</label> </br>
+
+            <input type="radio" id="klassiek" name="klassiek" value="klassiek">
+            <label for="klassiek">Klassiek</label>
+
+            <input type="radio" id="italiaans" name="italiaans" value="italiaans">
+            <label for="italiaans">Italiaans</label>
+
+            <input type="radio" id="amerikaans" name="amerikaans" value="amerikaans">
+            <label for="amerikaans">Amerikaans</label>
+        </div>
+
+
+        </br>
+        </br>
+            <label class="bold">Toppings</label>
+        </br>
+        <table>
+            <tr>
+                <td>
+                    <input type="checkbox" id="hesp" name="hesp" value="hesp" >
+                    <label for="hesp">Hesp</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="scampi" name="scampi" value="scampi" >
+                    <label for="scampi">Hesp</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="ajuin" name="ajuin" value="ajuin" >
+                    <label for="ajuin">Hesp</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="checkbox" id="champions" name="champions" value="champions" >
+                    <label for="champions">Champions</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="tonijn" name="tonijn" value="tonijn" >
+                    <label for="tonijn">Tonijn</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="artisjok" name="artisjok" value="artisjok" >
+                    <label for="artisjok">Artisjok</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="checkbox" id="tomaat" name="tomaat" value="tomaat" >
+                    <label for="tomaat">Tomaat</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="salami" name="salami" value="salami" >
+                    <label for="salami">Salami</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="mais" name="mais" value="mais" >
+                    <label for="mais">Maïs</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="checkbox" id="kaas" name="kaas" value="kaas" >
+                    <label for="kaas">Kaas</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="kip" name="kip" value="kip" >
+                    <label for="kip">Kip</label>
+                </td>
+                <td>
+                    <input disabled type="checkbox" id="mozarella" name="mozarella" value="mozarella" >
+                    <label for="mozarella">Mozzarella</label>
+                </td>
+            </tr>
+        </table>
+        </br>
+        </br>
+        <label class="bold">Opmerkingen</label>
+        </br>
+
+        <textarea rows="3" cols="120" wrap="hard">Graag zo snel mogelijk, ik heb honger!</textarea>
+        </br>
+
+        <label class="bold" for="betaalwijze">Betaalwijze</label>
+        </br>
+        <select required id="betaalwijze" name="betaalwijze" class="dropdown">
+            <option value="bancontact">Bancontact</option>
+            <option value="paypal">paypal</option>
+            <option value="kaka">kaka</option>
+        </select>
+
+        </br>
+        </br>
+        <input type="submit" value="Verzenden" class="new">
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* Naam student:  */
+* {
+    font-family: Consolas, "Courier New", serif;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 1000px;
+    border: #303131 3px solid;
+}
+
+td {
+    border: solid #303131 1px;
+    width: 250px;
+    padding: 5px;
+}
+
+table tr:nth-child(-n+1) {
+    text-align: center;
+}
+
+thead tr:nth-child(n) {
+    background-color: #2E6DB4;
+    font-size: 24px;
+    margin: 15px;
+    color: white;
+}
+
+tbody tr:nth-child(1) td:nth-child(1) {
+    background-color: #00ac9f;
+    font-weight: 700;
+    padding: 15px;
+    color: white;
+}
+
+tbody tr:nth-child(1) td:nth-child(2) {
+    background-color: #f3c300;
+    font-weight: 700;
+    padding: 15px;
+}
+
+tbody tr:nth-child(even) td  {
+    background-color: #d3d3d3;
+}
+
+tbody tr:nth-child(odd) td  {
+    background-color: #a9a9a9;
+}

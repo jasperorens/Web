@@ -1,0 +1,27 @@
+body {background-color: #d9ddd7;
+    font-family: Verdana;
+
+}
+h1 {color: #6fa372;
+}
+p {color: #ffffff;
+    background-color: #6a778a;
+    padding: 20px;
+}
+
+.Highlight {
+color: yellow;
+    border: 2px;
+    border-style: solid;
+    border-color: yellow;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+a {
+    color: white;
+
+}
+a:hover {
+    color: #6df469;
+}

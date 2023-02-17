@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oefening 3</title>
+    <link rel="stylesheet" href="oefening_3.css">
+</head>
+<body>
+    <form method="post" action="mailto:jasper.beuls@pxl.be" name="credit">
+    <table class="first">
+        <tr>
+
+            <td>
+                <label for="voornaam">Voornaam:</label>
+            </td>
+            <td>
+                <input type="text" id="voornaam" name="voornaam">
+            </td>
+
+            <td>
+                <label for="naam">Achternaam: </label>
+            </td>
+            <td>
+                <input type="text" id="naam" name="naam">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="gebdat">Birthday:</label>
+            </td>
+            <td>
+                <input type="date" id="gebdat" name="gebdat">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="radio" value="man" id="man" name="geslacht">
+                <label for="man">Man</label>
+            </td>
+
+            <td>
+                <input type="radio" value="vrouw" id="vrouw" name="geslacht">
+                <label for="vrouw">Vrouw</label>
+            </td>
+        </tr>
+    </table>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                </td>
+                <td>
+                    <input type="text" id="email" name="email"><br>
+                </td>
+                <td>
+                    <label for="password">Paswoord:</label>
+                </td>
+                <td>
+                    <input type="password" id="password" name="paswoord"><br>
+                </td>
+            </tr>
+        </table>
+
+        <div class="knoppen">
+            <input type="submit" value="Verstuur">
+            <input type="reset" value="Maak leeg">
+        </div>
+
+    </form>
+</body>
+</html>

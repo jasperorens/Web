@@ -1,0 +1,172 @@
+/* Naam student:  */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, "Courier New", serif;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    background-color: #e0e0e0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+
+
+}
+
+li {
+    display: inline;
+}
+
+
+
+/* eerste 2 knoppen */
+ul li:nth-child(-n+3):nth-child(n+2){
+    padding: 15px;
+    margin: 20px;
+    color: #303131;
+}
+
+a, a:hover, a:active, a:visited {
+    text-decoration: none;
+}
+
+ul li:nth-child(-n+3):nth-child(n+2):hover, :active, :visited{
+    border: #303131 solid 1px;
+}
+
+
+li img {
+    height: 50px;
+    margin: 20px;
+}
+
+/* laatste knop */
+ul li:nth-child(4){
+    background-color: #303131;
+    border: #303131 solid 2px;
+    color: #e0e0e0;
+    border-radius: 50px;
+    align-self: center;
+    margin-left: 1400px;
+}
+
+/* laatste knop */
+ul li:nth-child(4):hover, :active{
+    color: #303131;
+    background-color: #e0e0e0;
+}
+
+/*///////////////////////////header////////////////////////////*/
+
+header {
+    background-image: url("assets/bg_ps.jpg");
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    margin-top: 94px;
+    padding: 140px;
+    display: flex;
+    justify-content: center;
+}
+
+/*///////////////////////////main////////////////////////////*/
+
+main {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+main h1, main h2 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+main p {
+    padding: 10px 0;
+    text-align: left;
+}
+
+main p img {
+    width: 30%;
+    float: right;
+    margin: 2%;
+}
+
+/*///////////////////////////kleuren////////////////////////////*/
+
+.kleuren{
+    display: flex;
+    flex-direction: row;
+}
+
+.kleuren div:nth-child(n){
+    width: 22%;
+    padding: 20px;
+}
+
+.kleuren div:nth-child(1){
+    background-color: #DF0024;
+    margin-right: 2%;
+}
+
+.kleuren div:nth-child(2){
+    background-color: #f3C300;
+    margin: 0 2%;
+}
+
+.kleuren div:nth-child(3){
+    background-color: #00AC9F;
+    margin: 0 2%;
+}
+
+.kleuren div:nth-child(4){
+    background-color: #2E6DB4;
+    margin-left: 2%;
+}
+
+/*///////////////////////////responsive////////////////////////////*/
+
+@media screen and (max-width: 1200px){
+    main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    li img {
+        display: none;
+    }
+
+    /* laatste knop */
+    ul li:nth-child(4){
+        display: none;
+    }
+
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    ul li:nth-child(-n+3):nth-child(n+2):hover, :active, :visited{
+        border: none;
+        font-weight: 700;
+        margin-top: 158px;
+    }
+}
+
+
+

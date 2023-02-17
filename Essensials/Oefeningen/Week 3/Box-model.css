@@ -1,0 +1,26 @@
+p, a {
+
+}
+
+.Highlight {
+    border: 1px solid black;
+}
+
+.links {
+    display: inline-block;
+    width: 55%;
+}
+
+.rechts {
+    border: ;
+}
+
+
+
+ul {
+    list-style-type: upper-roman;
+}
+
+ol {
+    list-style-type: square;
+}

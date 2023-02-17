@@ -1,0 +1,208 @@
+
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif, 'Motiva Sans';
+}
+
+body {
+    background-image: url("assets/background.png");
+    background-position: left;
+    background-size: 1000%;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+
+}
+
+
+/*//////////////////nav///////////////////////////*/
+nav {
+    background: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+nav div a {
+    color: white;
+    text-decoration: none;
+    text-shadow: black 2px 3px;
+}
+
+.buttons a:nth-child(n) {
+    margin: 0 25px;
+}
+
+.search {
+    margin-left: 250px;
+    background-color: #344654;
+}
+
+nav a:active {
+    color: orange;
+    border: 1px solid orange;
+}
+
+nav a:visited {
+    color: red;
+}
+
+
+/*//////////////////main/////////////////////////////*/
+
+main {
+    float: right;
+}
+
+main h4 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.cards {
+    height: 150px;
+}
+
+.viewer {
+    display: flex;
+    flex-direction: row;
+}
+
+.viewer div:nth-child(n) {
+    display: flex;
+    flex-direction: column;
+}
+
+.hOL {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.holMain {
+    height: 450px;
+}
+
+.hOL div img:nth-child(n) {
+    height: 120px;
+}
+
+.screenshots {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+
+.screenshots img:nth-child(n) {
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/*///////////////////////////////////*/
+.nowAvailable {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px;
+}
+
+.nowAvailableText {
+    color: white;
+    margin-top: 5px;
+}
+
+.topSeller {
+    background-color: #344654;
+    color: white;
+    display: inline;
+    padding: 5px;
+}
+
+.korting {
+    color: #BEEE11;
+    background-color: olivedrab;
+    display: inline;
+    padding: 5px;
+}
+
+.nieuwePrijs {
+    color: #BEEE11;
+    background-color: #344654;
+    display: inline;
+    padding: 3px;
+}
+
+.oudePrijs {
+    color: #738895;
+    text-decoration: line-through;
+    background-color: #344654;
+    display: inline;
+    padding: 3px;
+}
+
+/*.icon {
+display: inline-block;
+    height: 10%;
+    width: 20px;
+
+    * <img src="assets/icon_platform_win.png" alt="windows logo" class="icon">
+                    <img src="assets/icon_platform_mac.png" alt="apple logo" class="icon">
+} */
+
+
+
+/*////////////////////add//////////////////////////*/
+
+.advertisement {
+    width: 100%;
+    display: inline-block;
+    align-content: center;
+    padding: 20px;
+}
+
+.advertisement img {
+    margin: 10px;
+}
+
+.advertisement img:hover {
+    margin-left: 50px;
+    margin-top:30px;
+    box-shadow: 0 0 10px 10px #66c0f4;
+}
+
+/*////////////////////mobile///////////////////////////*/
+
+@media screen and (max-width: 600px){
+    .cards {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav div a {
+        padding-top: 10px;
+    }
+
+    .search input{
+        width: 100%;
+    }
+}
+
+

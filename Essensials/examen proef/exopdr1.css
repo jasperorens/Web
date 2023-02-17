@@ -1,0 +1,150 @@
+/* Naam student: Jasper Orens */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Consolas, "Courier New", Serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+nav {
+    background-color: #e0e0e0;
+    width: 100%;
+    position: fixed;
+    display: inline-block;
+    flex-direction: row;
+    top: 0;
+}
+
+nav ul {
+    align-items: center;
+    display: flex;
+}
+
+nav img {
+    height: 50px;
+    margin: 20px;
+}
+
+.knoppen {
+    padding: 15px;
+    margin: 20px;
+    color: #303131;
+    text-decoration: none;
+}
+
+.knoppen:hover, .knoppen:active {
+    border: #303131 1px solid;
+}
+
+
+.klachtenformulier {
+    margin-left: 800px;
+    background-color: #303131;
+    border: 2px #303131 solid;
+    border-radius: 50px;
+    color: #e0e0e0;
+    padding: 10px;
+}
+
+.klachtenformulier:hover, .klachtenformulier:active {
+    color: #303131;
+    background-color: #e0e0e0;
+}
+
+header {
+    height: 500px;
+    width: 100%;
+    margin-top: 94px;
+    padding: 140px;
+    background-image: url("assets/bg_ps.jpg");
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+main {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    flex-direction: column;
+}
+
+main h1, main h2 {
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+main p {
+    padding: 0 10px;
+    text-align: justify-all;
+}
+
+p img {
+    width: 30%;
+    margin: 2%;
+    float: right;
+}
+
+.kleuren {
+    display: flex;
+    flex-direction: row;
+}
+
+.kleur1, .kleur2, .kleur3, .kleur4 {
+    width: 22%;
+    padding: 20px;
+
+}
+
+.kleur1 {
+    background-color: #DF0024;
+    margin-right: 2%;
+}
+
+.kleur2 {
+    background-color: #f3C300;
+    margin: 0 2%;
+}
+
+.kleur3 {
+    background-color: #00AC9F;
+    margin: 0 2%;
+}
+
+.kleur4 {
+    background-color: #2E6DB4;
+    margin-left: 2%;
+}
+
+@media screen and (max-width: 1200px){
+    main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav img {
+        display: none;
+    }
+    .klachtenformulier {
+        display: none;
+    }
+
+    .knoppen {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+

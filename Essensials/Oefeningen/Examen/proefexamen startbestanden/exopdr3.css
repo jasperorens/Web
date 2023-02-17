@@ -1,0 +1,68 @@
+/* Naam student:  *
+ */
+
+* {
+    font-family: Consolas, "Courier New", serif;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.left label {
+    width: 80px;
+    font-weight: 400;
+}
+
+.right input {
+    border: solid 1px #0e0e0e;
+    border-radius: 10px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.radiobuttons {
+    display: flex;
+    flex-direction: row;
+}
+
+/*///////////radio//////////////*/
+.radiobuttons input {
+    width: 10px;
+}
+
+input:enabled {
+    outline: none;
+}
+
+textarea {
+    width: 620px;
+    border: solid 1px #e0e0e0;
+    border-radius: 10px;
+}
+
+.knoppen input:nth-child(n) {
+    background-color: #2e6db4;
+    color: white;
+    width: 180px;
+    font-weight: 700;
+    border: #e0e0e0 1px solid;
+    border-radius: 10px;
+}
+
+label, input {
+    padding: 10px;
+    margin: 5px;
+}
