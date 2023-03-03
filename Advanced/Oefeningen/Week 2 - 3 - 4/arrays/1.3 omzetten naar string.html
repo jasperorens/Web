@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <p id="item"></p>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  window.onload = function() {
+    const huidigeOpleidingen = ["Digitale vormgeving", "Internet of Things", "Programmeren",
+      "Systeem- en netwerkbeheer", "Design", "Web", "Elektronica-ICT", "Toegepaste informatica",
+      "Applicatie-ontwikkeling", "Software-management",
+      "Artificiële intelligentie", "Systemen en netwerkbeheer", " Multimedia- en Commmunicatietechnologie"];
+
+    let woord;
+
+    woord = huidigeOpleidingen.join("<br>");
+
+    document.getElementById("item").innerHTML = woord;
+
+
+
+    //for (let i = 0; i < huidigeOpleidingen.length; i++){
+    //  woord += huidigeOpleidingen[i];
+    //  woord += "\n"
+    //}
+  };
+
+
+
+</script>

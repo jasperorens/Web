@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="item"></p>
+
+
+</body>
+</html>
+<script>
+
+  let getal1 = window.prompt('geef een getal');
+  let getal2 = window.prompt('geef een tweede getal');
+
+  function berekening() {
+    let uitkomst1 = getal1 * getal2;
+    return uitkomst1;
+  }
+
+  let resultaat = berekening();
+
+document.getElementById('item').innerHTML = resultaat;
+
+</script>

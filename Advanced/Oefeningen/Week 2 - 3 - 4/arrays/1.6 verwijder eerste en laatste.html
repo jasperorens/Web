@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+
+  <p id="item"></p>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  window.onload = function() {
+    let hondenrassen = ["Poedel", "labrador", "Golden retriever", "Bovier", "Tackle", "Husky", "Duitse herder",
+      "Shiba inu", "chihuahua", "Wolfshond"];
+
+
+    hondenrassen.unshift("Beagle", "Bulldog", "Pitbull", "Engels cocker", "Afghaanse windhond");
+
+    //verwijder een element aan het einde va nde array
+    hondenrassen.pop();
+
+    //verwijder een element aan het begin van de array
+    hondenrassen.shift();
+
+    console.log(hondenrassen);
+    document.getElementById("item").innerHTML = hondenrassen ;
+  };
+
+
+
+
+</script>
