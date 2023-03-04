@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="inBox"></p>
+</body>
+</html>
+<script>
+    window.onload = function() {
+        let inputZin = prompt("Geef een zin in:");
+        let outputZin = startMetHallo(inputZin);
+        document.getElementById('inBox').innerHTML = outputZin;
+    };
+
+    function startMetHallo(zin) {
+        if (zin.startsWith("Hallo")) {
+            return zin;
+        } else {
+            return "Hallo " + zin.charAt(0).toLowerCase() + zin.slice(1);
+        }
+    }
+</script>
