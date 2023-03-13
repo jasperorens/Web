@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="inBox"></p>
+</body>
+</html>
+<script>
+    window.onload = function zinSplitsen(){
+        let randomZin = window.prompt('geef een random zin');
+        let getalX;
+        parseInt(getalX = window.prompt('geef een random getal tot het maximaal aantal tekens van de zin') );
+
+        const splitted = randomZin.substr(0, getalX);
+        const splitted2 = randomZin.substr(getalX, randomZin.length)
+        alert(splitted);
+        alert(splitted2)
+    }
+</script>

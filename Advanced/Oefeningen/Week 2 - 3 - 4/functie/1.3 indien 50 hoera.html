@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<p id="item">1.3 Oefening
+  Schrijf een functie ‘isVijftig()’.
+  De bezoeker van de webpagina mag twee random getallen tussen 0 en 100 ingeven.
+  De output van de functie bevat de tekst ‘Hoera VIJFTIG’ indien:
+  • Één van de twee getallen 50 is.
+  • De som van de twee getallen 50 is.
+  De output wordt getoond op de webpagina.</p>
+
+
+</body>
+</html>
+<script>
+  window.onload = function isVijftig(){
+    let getal1 = window.prompt('Geef een random getal tussen 0 en 100');
+    let getal2 = window.prompt('Geef nog een random getal tussen 0 en 100');
+    let hoera;
+    if ((parseInt(getal1) + parseInt(getal2) === 50) || (parseInt(getal1) === 50) || (parseInt(getal2) === 50))
+    {
+      hoera = 'Hoera VIJFTIG';
+    }
+    else {
+      hoera = 'doe het es tegoei jongeuh!'
+    }
+  document.getElementById('item').innerHTML = hoera;
+  }
+
+
+</script>

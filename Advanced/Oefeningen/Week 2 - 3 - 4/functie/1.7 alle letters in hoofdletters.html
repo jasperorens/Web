@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<p id="inBox"></p>
+</body>
+</html>
+<script>
+
+  window.onload = function alleWoordenStartenMetHoofdletter() {
+    let zin = 'Deze oefeningen zijn héél leuk.';
+    let verbeterdeZin = zin.split(' ');
+    for (let i = 0; i < verbeterdeZin.length; i++){
+      verbeterdeZin[i] = verbeterdeZin[i].charAt(0).toUpperCase() + verbeterdeZin[i].slice(1);
+    }
+    document.getElementById('inBox').innerHTML = verbeterdeZin;
+  }
+
+</script>

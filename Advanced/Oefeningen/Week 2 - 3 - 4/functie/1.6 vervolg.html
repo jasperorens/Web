@@ -6,9 +6,7 @@
 </head>
 <body>
 <p id="inBox">1.6 Oefening
-  Pas de functie uit de vorige oefening aan en schrijf een functie ‘verwijderTeken()’. Vraag aan
-  de bezoeker van de webpagina een random zin en vraag daarna een random getal tot het
-  maximaal aantal tekens van de opgegeven zin.
+
   Splits de zin op in twee stukken op basis van het opgegeven random getal. Het random
   opgegeven getal is het overeenstemmende teken waarop we de zin gaan splitsen. Dit
   karakter gaan we ook mee verwijderen.
@@ -18,5 +16,18 @@
 </body>
 </html>
 <script>
+  window.onload = function verwijderTeken(){
+    let randomZin = window.prompt('geef een random zin');
+    let getalX;
+    parseInt(getalX = window.prompt('geef een random getal tot het maximaal aantal tekens van de zin'));
+    while (isNaN(getalX)){
+      parseInt(getalX = window.prompt('doe het nu es tegoei jongeuh'));
+    }
+
+    const splitted = randomZin.substr(0, getalX);
+    const splitted2 = randomZin.substr(getalX, randomZin.length)
+    console.log(splitted);
+    console.log(splitted2);
+  }
 
 </script>
